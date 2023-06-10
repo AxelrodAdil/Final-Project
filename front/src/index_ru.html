@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ГТ-700-5</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<form id="dataForm">
+  <div class="container">
+    <h1>Запрос данных</h1>
+
+    <div class="left-section">
+      <div class="form-group">
+        <label for="gpuId">ID ГТУ:</label>
+        <input type="number" id="gpuId" name="gpuId" required placeholder="1">
+      </div>
+      <div class="form-group">
+        <label for="inputInletGasTemperature">Температура газа на входе (°C):</label>
+        <input type="number" id="inputInletGasTemperature" name="inputInletGasTemperature" required placeholder="4">
+      </div>
+      <div class="form-group">
+        <label for="inputOutdoorTemperature">Наружная температура (°C):</label>
+        <input type="number" id="inputOutdoorTemperature" name="inputOutdoorTemperature" required placeholder="3">
+      </div>
+      <div class="form-group">
+        <label for="inputGasDensityAtStandardConditions">Плотность газа при стандартных условиях (кг/м^3):</label>
+        <input type="number" step="any" id="inputGasDensityAtStandardConditions" name="inputGasDensityAtStandardConditions" required placeholder="0">
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="form-group">
+        <label for="inputGasPressureAtTheCompressorInlet">Давление газа на входе в компрессор (кг/см^2):</label>
+        <input type="number" step="any" id="inputGasPressureAtTheCompressorInlet" name="inputGasPressureAtTheCompressorInlet" required placeholder="30.6">
+      </div>
+      <div class="form-group">
+        <label for="inputExternalAirPressure">Внешнее давление воздуха (мм.рт.ст.):</label>
+        <input type="number" id="inputExternalAirPressure" name="inputExternalAirPressure" required placeholder="737">
+      </div>
+      <div class="form-group">
+        <label for="actualSpeed">Фактическая скорость (об./мин):</label>
+        <input type="number" id="actualSpeed" name="actualSpeed" required placeholder="4900">
+      </div>
+      <div class="form-group">
+        <label for="inputVolumeFlow">Объемный расход (м^3/час):</label>
+        <input type="number" id="inputVolumeFlow" name="inputVolumeFlow" required placeholder="393290">
+      </div>
+    </div>
+    <div class="button-group">
+      <button type="submit">Отправить</button>
+      <br>
+      <br>
+      <div class="language-buttons">
+        <button type="button" onclick="redirectToEnglish()">English</button>
+        <button type="button" onclick="redirectToKazakh()">Қазақша</button>
+      </div>
+      <br>
+      <br>
+      <button class="button-34" type="button" onclick="redirectToCharts()">Диаг-раммы</button>
+    </div>
+    <input type="hidden" id="lang" name="lang" value="ru">
+  </div>
+</form>
+<script src="sender.js"></script>
+<script>
+  function redirectToEnglish() {
+    window.location.href = "index.html";
+  }
+  function redirectToKazakh() {
+    window.location.href = "index_kk.html";
+  }
+  function redirectToCharts() {
+    window.location.href = "charts_ru.html";
+  }
+</script>
+
+</body>
+</html>

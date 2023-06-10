@@ -1,0 +1,10 @@
+{
+  "gpuId": 1,
+  "actualSpeed": 4900,
+  "inputVolumeFlowUnderOperatingConditions": 393290,
+  "inputInletGasTemperature": 4,
+  "inputGasPressureAtTheCompressorInlet": 30.6,
+  "inputGasDensityAtStandardConditions": 0,
+  "inputExternalAirPressure": 737,
+  "inputOutdoorTemperature": 3
+}

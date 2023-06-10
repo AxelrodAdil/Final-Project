@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GT-700-5</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<form id="dataForm">
+  <div class="container">
+    <h1>Request Data</h1>
+
+    <div class="left-section">
+      <div class="form-group">
+        <label for="gpuId">GPU ID:</label>
+        <input type="number" id="gpuId" name="gpuId" required placeholder="1">
+      </div>
+      <div class="form-group">
+        <label for="inputInletGasTemperature">Inlet Gas Temperature (°C):</label>
+        <input type="number" id="inputInletGasTemperature" name="inputInletGasTemperature" required placeholder="4">
+      </div>
+      <div class="form-group">
+        <label for="inputOutdoorTemperature">Outdoor Temperature (°C):</label>
+        <input type="number" id="inputOutdoorTemperature" name="inputOutdoorTemperature" required placeholder="3">
+      </div>
+      <div class="form-group">
+        <label for="inputGasDensityAtStandardConditions">Gas Density at Standard Conditions (kg/m^3):</label>
+        <input type="number" step="any" id="inputGasDensityAtStandardConditions" name="inputGasDensityAtStandardConditions" required placeholder="0">
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="form-group">
+        <label for="inputGasPressureAtTheCompressorInlet">Gas Pressure at the Compressor Inlet (kg/cm^2):</label>
+        <input type="number" step="any" id="inputGasPressureAtTheCompressorInlet" name="inputGasPressureAtTheCompressorInlet" required placeholder="30.6">
+      </div>
+      <div class="form-group">
+        <label for="inputExternalAirPressure">External Air Pressure (mmHg):</label>
+        <input type="number" id="inputExternalAirPressure" name="inputExternalAirPressure" required placeholder="737">
+      </div>
+      <div class="form-group">
+        <label for="actualSpeed">Actual Speed (rpm):</label>
+        <input type="number" id="actualSpeed" name="actualSpeed" required placeholder="4900">
+      </div>
+      <div class="form-group">
+        <label for="inputVolumeFlow">Volume Flow (m^3/hour):</label>
+        <input type="number" id="inputVolumeFlow" name="inputVolumeFlow" required placeholder="393290">
+      </div>
+    </div>
+    <div class="button-group">
+      <button type="submit">Submit</button>
+      <br>
+      <br>
+      <div class="language-buttons">
+        <button type="button" onclick="redirectToRussian()">Русский</button>
+        <button type="button" onclick="redirectToKazakh()">Қазақша</button>
+      </div>
+      <br>
+      <br>
+      <button class="button-34" type="button" onclick="redirectToCharts()">Charts</button>
+    </div>
+    <input type="hidden" id="lang" name="lang" value="en">
+  </div>
+</form>
+<script src="sender.js"></script>
+<script>
+  function redirectToRussian() {
+    window.location.href = "index_ru.html";
+  }
+  function redirectToKazakh() {
+    window.location.href = "index_kk.html";
+  }
+  function redirectToCharts() {
+    window.location.href = "charts.html";
+  }
+</script>
+
+</body>
+</html>

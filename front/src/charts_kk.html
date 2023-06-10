@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Диаграммалар</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <style>
+    #myChartContainer {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+<h1>Диаграммалар беті</h1>
+<div class="contchart">
+  <div>
+    <label for="labelSelect">Заттаңба таңдаңыз:</label>
+    <select id="labelSelect">
+      <option value="temperature">Температура</option>
+      <option value="pressure">Қысым</option>
+      <option value="commercial_performance">Коммерциялық өнімділік</option>
+    </select>
+  </div>
+  <div class="button-group">
+    <button onclick="fetchDataAndGenerateChart()">Диаграмма құру</button>
+    <br>
+    <br>
+    <div>
+      <select id="languageSelect" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+        <option value="kz">Қазақша</option>
+      </select>
+    </div>
+    <br>
+    <br>
+    <button onclick="goToIndex()">Артқа</button>
+  </div>
+</div>
+<div id="myChartContainer">
+  <canvas id="myChart"></canvas>
+</div>
+<script src="generateCharts.js"></script>
+</body>
+</html>

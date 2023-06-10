@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/final
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+  messages:
+    basename: messages
+    encoding: UTF-8
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: testmain@gmail.com
+    password: password
+    properties:
+      mail:
+        smtp:
+          ssl:
+            protocols: TLSv1.2
+            ciphers: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+          auth: true
+          starttls:
+            enable: true
+            required: true
+    protocol: smtp
+
+email:
+  sender: sendermain@gmail.com
+  subject: Report of gas pumping unit
+  defaultAdminEmails:
+    - 'test@gmail.com'

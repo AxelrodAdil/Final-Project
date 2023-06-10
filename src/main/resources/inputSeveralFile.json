@@ -1,0 +1,72 @@
+[
+  {
+    "gpuId": 1,
+    "actualSpeed": 5000,
+    "inputVolumeFlowUnderOperatingConditions": 513760,
+    "inputInletGasTemperature": 3,
+    "inputGasPressureAtTheCompressorInlet": 32,
+    "inputGasDensityAtStandardConditions": 0.75,
+    "inputExternalAirPressure": 740,
+    "inputOutdoorTemperature": -7
+  },
+  {
+    "gpuId": 1,
+    "actualSpeed": 5000,
+    "inputVolumeFlowUnderOperatingConditions": 392500,
+    "inputInletGasTemperature": 3,
+    "inputGasPressureAtTheCompressorInlet": 31,
+    "inputGasDensityAtStandardConditions": 0.75,
+    "inputExternalAirPressure": 741,
+    "inputOutdoorTemperature": 4
+  },
+  {
+    "gpuId": 1,
+    "actualSpeed": 5000,
+    "inputVolumeFlowUnderOperatingConditions": 394450,
+    "inputInletGasTemperature": 4,
+    "inputGasPressureAtTheCompressorInlet": 30.6,
+    "inputGasDensityAtStandardConditions": 1,
+    "inputExternalAirPressure": 737,
+    "inputOutdoorTemperature": 3
+  },
+  {
+    "gpuId": 1,
+    "actualSpeed": 5000,
+    "inputVolumeFlowUnderOperatingConditions": 393290,
+    "inputInletGasTemperature": 4,
+    "inputGasPressureAtTheCompressorInlet": 30.6,
+    "inputGasDensityAtStandardConditions": 0,
+    "inputExternalAirPressure": 737,
+    "inputOutdoorTemperature": 3
+  },
+  {
+    "gpuId": 1,
+    "actualSpeed": 5000,
+    "inputVolumeFlowUnderOperatingConditions": 393280,
+    "inputInletGasTemperature": 10,
+    "inputGasPressureAtTheCompressorInlet": 35.1,
+    "inputGasDensityAtStandardConditions": 1,
+    "inputExternalAirPressure": 730,
+    "inputOutdoorTemperature": 2
+  },
+  {
+    "gpuId": 1,
+    "actualSpeed": 5000,
+    "inputVolumeFlowUnderOperatingConditions": 294160,
+    "inputInletGasTemperature": 8,
+    "inputGasPressureAtTheCompressorInlet": 35.4,
+    "inputGasDensityAtStandardConditions": 1,
+    "inputExternalAirPressure": 721,
+    "inputOutdoorTemperature": -4
+  },
+  {
+    "gpuId": 1,
+    "actualSpeed": 5000,
+    "inputVolumeFlowUnderOperatingConditions": 287560,
+    "inputInletGasTemperature": 7,
+    "inputGasPressureAtTheCompressorInlet": 36,
+    "inputGasDensityAtStandardConditions": 1,
+    "inputExternalAirPressure": 737,
+    "inputOutdoorTemperature": -7
+  }
+]
